@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import api from '../Services/api';
 import { CardStyle, Image } from './Style';
+import { getBackground } from '../Utils/Colors';
 
 export default function Card({ name }) {
   const [pokemon, setPokemon] = useState(null);
@@ -20,7 +21,9 @@ export default function Card({ name }) {
   return (
     <>
       {pokemon && (
-          <CardStyle>
+          <CardStyle
+            style={{ background: getBackground(pokemon.types[0].type.name) }}
+          >
             <p>{pokemon.name}</p>
             <p>{pokemon.id}</p>
             

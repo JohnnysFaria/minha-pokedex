@@ -7,7 +7,7 @@ export default function Home() {
   const [pokemons, setPokemons] = useState(null);
   const getPokemons = async () => {
     try {
-      const data = await api.getPokemonList(0);
+      const data = await api.getPokemonList(20);
       setPokemons(data.results);
     } catch (erro) {
       console.log(erro);

@@ -1,12 +1,14 @@
-import react from 'react'
-import Card from './Card/Card'
+import React from 'react'
 import List from '../src/List/List'
+import Container from './Utils/Container'
 
 function App() {
 
   return (
     <>
+    <Container title={'All Pokemons'}>
       <List />
+    </Container>
     </>
   )
 }

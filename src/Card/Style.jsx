@@ -17,4 +17,10 @@ const Image = styled.img`
     max-width: 100px;
 `
 
-export { CardStyle, Image };
+const Title = styled.div`
+  width: 100%;
+  height: 40%;
+  border-radius: 10%;
+`
+
+export { CardStyle, Image, Title };
